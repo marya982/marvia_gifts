@@ -1,0 +1,248 @@
+﻿/* Base Styles & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fff5f7 0%, #fde2e4 100%);
+    color: #4a4a4a;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 90px 20px 50px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+    .hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5rem;
+        color: #d6336c;
+        margin-bottom: 10px;
+    }
+
+    .hero .subtitle {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #666666;
+        margin-bottom: 15px;
+    }
+
+    .hero .description {
+        font-size: 1rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        color: #777777;
+    }
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+    .features h2, .catalog h2, .cta-section h2 {
+        font-family: 'Playfair Display', serif;
+        color: #d6336c;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default;
+}
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(214, 51, 108, 0.18);
+    }
+
+    .feature-card .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+        color: #d6336c;
+        margin-bottom: 10px;
+    }
+
+/* Flower Catalog Section */
+.catalog {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.catalog-subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    color: #b82558;
+    font-size: 1.6rem;
+    margin: 20px 0 25px;
+    text-align: center;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.catalog-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flower-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .flower-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(214, 51, 108, 0.15);
+    }
+
+/* Flower Preview Images */
+.flower-preview {
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+}
+
+    .flower-preview img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+.flower-card:hover .flower-preview img {
+    transform: scale(1.08);
+}
+
+.flower-card h3 {
+    color: #d6336c;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.flower-card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-sm {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #ff758c;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+    .btn-sm:hover {
+        background: #d6336c;
+    }
+
+/* CTA & Buttons */
+.cta-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: #d6336c;
+    color: #ffffff;
+}
+
+.btn-instagram {
+    background: #e1306c;
+    color: #ffffff;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.04);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    color: #888888;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
